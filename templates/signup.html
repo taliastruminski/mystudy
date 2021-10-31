@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  </head>
+  <body style="background-color:  #ffbb99;">
+
+  	<h1 class="font-effect-outline">SIGN UP</h1>
+  	<div >
+	<ul class="nav" id = "nav">
+	  <li class="nav-item">
+	    <a class="nav-link active" aria-current="page" href="/">Home</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="/aboutus">About Us</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="/notes">Notes</a>
+	  </li>
+	  <li class="nav-item">
+      <a class="nav-link" href="/signup">Sign Up</a>
+   	  </li>
+      <li class="nav-item">
+      <a class="nav-link" href="/login">Log In</a>
+      </li>
+	</ul>
+	</div>
+
+  	
+	<h4> In order to sign up, free of charge, please fill the folowing information</h4>
+	<form action = "/signup" method = "POST" id = "signup">
+		<table>
+		<tr>
+		<td>
+			<input type = "text" name = "username" placeholder="Username">
+		</td>
+		<td>
+			<input type = "text" name = "password" placeholder="Password">
+		</td>
+		<td>
+			<input type = "text" name = "name" placeholder="First Name">
+		</td>
+		
+		<br>
+		 </tr>
+		</table>
+		<center>
+		<input type="Submit" value="Submit" 22>
+	</center>
+	</form>
+	<h4>Already have an account? Log in!<h4>
+	<a href = "/login">
+		<button type="button" id = "login_but">Log In</button> 
+	</a>
+
+    
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  
+
+</html>
+
+
